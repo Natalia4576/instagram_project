@@ -7,12 +7,10 @@ body{
     margin: 0 auto;
     
 }
-@media (min-width: 0px) and (max-width: 800px){
+@media (min-width: 320px) and (max-width: 800px){
     .container{
         width: 100vw;
     }
-}
-@media (min-width: 0px) and (max-width: 600px){
     .header_bottom_image img{
         width: 80px;
         height: 80px;
@@ -22,15 +20,60 @@ body{
     .header_bottom_image img{
         width: 60px;
         height: 60px;
-        
+    }
+    .container{
+        width: 100vw;
+    }
+}
+@media (min-width: 800px){
+    .header_bottom_image img{
+        width: 120px;
+        height: 120px;
+    }
+}
+@media screen and (min-width: 800px){
+    a.follow_button{
+        font-size: 16px;
+        line-height: 44px;
+    }
+    .about{
+        margin-top: 15px;
+        margin-left: 4.4%;
+    }
+}
+@media screen and (min-width: 800px){
+    div.header_bottom_image img{
+        margin-left: 20%;
+    }
+}
+@media screen and (min-width: 800px){
+    div.stories_item{
+        width: 51%;
+        height: 115%;
+        margin-left: -4.5vw;
+        margin-top: 30px;
+    }
+    div.stories_items:nth-child(6){
+        opacity: 1;
+        display: flex;
+        justify-content: center;
+    }
+    div.stories{
+        grid:  68% / repeat(6, 10vw);
+    }
+    hr.stories_line{
+        margin-top: 30px;
     }
 }
 .header_top{
     display: flex;
+    position: sticky;
+    background: white;
+    width: 100%;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    height: 5.6vh;
+    height: 6.7vh;
 }
 .header_top h3{
     font-weight: bold;
@@ -49,14 +92,11 @@ body{
     border: none; 
     background-color: #E3E3E3;
     color: #E3E3E3; 
-    height: 2px; 
+    height: 1.4px; 
 }
 .header_bottom{
     display: grid;
     grid: repeat(2, 49%) / repeat(4, 25%);
-}
-.header_bottom div{
- 
 }
 .header_bottom_image{
     grid-row: 1/3;
@@ -99,12 +139,114 @@ body{
 }
 .header_bottom_image img{
     margin: 0 auto;
-    display: block;
-   
+    display: block; 
+    margin-left: 10px;
+    margin-top: 7px;
+    background: linear-gradient(to bottom, #7D3879, #7D3879, #A3477F, #A74463, #A62634, #B3495C, #C55E34, #D0AB32, #E0B84C);
+    padding: 3px;
+    border-radius: 100%;
+}
+a{
+    text-decoration: none;
+}
+.follow_buttons{
+    display: flex;
 }
 .follow_button{
-    width: 84%;
-    height: 65%;
+    width: 77%;
+    height: 66%;
     background: #3897F1;
+    margin-top: 8px;
+    color: white;
+    display: block;
+    text-align: center;
+    margin-left: 10px;
+    font-size: 13.4px;
+    border-radius: 2px;
+    line-height: 30px;
+}
+.follow_button_1{
+    width: 13%;
+    height: 66%;
+    margin-top: 8px;
+    background: #3897F1;
+    color: white;
+    display: block;
+    display: flex;
+    margin-left: 4px;
+    border-radius: 2px;
+}
+.follow_button_1 img{
+    width: 9px;
+    align-self: center;
+    height: 9px;
+    display: block;
+    margin: 0 auto;
+}
+.nickname{
+    display: flex;
+}
+.nickname h3{
+    margin-left: 15px;
+    font-size: 14.5px;
+    line-height: 1px;
+}
+.nickname img{
     margin-top: 3px;
+}
+.about_text{
+    margin-left: 15px;
+    font-size: 13.5px;  
+    margin-top: -3px;
+}
+.about a{
+    margin-left: 15px;
+    color: rgb(6, 6, 143);
+    font-size: 13.5px; 
+    display: block;
+    margin-top: -11px;
+}
+.stories{
+    display: grid;
+    grid: 68% / repeat(5, 25%);
+    height: 13vh;
+    margin-top: 2vh;
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+.stories_item{
+    width: 75%;
+    height: 105%;
+    border: 3px solid #D7D7D7;
+    border-radius: 100%;
+    background: black;
+}
+.stories_item_line:nth-child(1){
+    border-right: 3px solid #E3E3E3;
+    height: 30px;
+}
+.stories_items:nth-child(2){
+    display: flex;
+    justify-content: center;
+}
+.stories_items:nth-child(4){
+    display: flex;
+    justify-content: center;
+}
+.stories_items:nth-child(3){
+    display: flex;
+    justify-content: center;
+}
+.stories_items:nth-child(5){
+    display: flex;
+    justify-content: center;
+}
+.stories_items:nth-child(6){
+    opacity: 0;
+}
+.stories_line{
+    border: none; 
+    background-color: #E3E3E3;
+    color: #E3E3E3; 
+    height: 2.2px; 
 }
